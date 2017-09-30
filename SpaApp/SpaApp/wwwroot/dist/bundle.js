@@ -60,7 +60,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "7708e0b999883f454dd1"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "bdacdb5f89e0463dca8d"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -714,7 +714,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "7708e0b999883f454dd1"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "bdacdb5f89e0463dca8d"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -1389,7 +1389,7 @@
 /***/ "../fab/fab.fsproj":
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed: Error: connect ECONNREFUSED 127.0.0.1:61225\nMake sure Fable server is running on port 61225\n    at Loader.fableUtils.client.send.then.catch.err (C:\\_c\\fable-samples\\SpaApp\\SpaApp\\node_modules\\fable-loader\\index.js:110:18)\n    at process._tickCallback (internal/process/next_tick.js:109:7)");
+throw new Error("Module build failed: Error: connect ECONNREFUSED 127.0.0.1:61225\nMake sure Fable server is running on port 61225\n    at Loader.fableUtils.client.send.then.catch.err (c:\\_c\\fable-samples\\SpaApp\\SpaApp\\node_modules\\fable-loader\\index.js:110:18)\n    at process._tickCallback (internal/process/next_tick.js:109:7)");
 
 /***/ }),
 
