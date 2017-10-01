@@ -60,7 +60,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "707a01c3d5c7bbe56882"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "1e62a7f12bad62909f74"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -714,7 +714,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "707a01c3d5c7bbe56882"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "1e62a7f12bad62909f74"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -1386,7 +1386,7 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "../fab/App.fs":
+/***/ "../ClientScript/App.fs":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1405,12 +1405,12 @@ init();
 
 /***/ }),
 
-/***/ "../fab/fab.fsproj":
+/***/ "../ClientScript/ClientScript.fsproj":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__App_fs__ = __webpack_require__("../fab/App.fs");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__App_fs__ = __webpack_require__("../ClientScript/App.fs");
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "init", function() { return __WEBPACK_IMPORTED_MODULE_0__App_fs__["a"]; });
 
 
@@ -3434,7 +3434,7 @@ module.exports = function(module) {
 
 __webpack_require__("./node_modules/event-source-polyfill/eventsource.js");
 __webpack_require__("./node_modules/webpack-hot-middleware/client.js?path=__webpack_hmr&dynamicPublicPath=true");
-module.exports = __webpack_require__("../fab/fab.fsproj");
+module.exports = __webpack_require__("../ClientScript/ClientScript.fsproj");
 
 
 /***/ })

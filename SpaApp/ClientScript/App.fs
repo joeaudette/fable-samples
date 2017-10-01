@@ -1,4 +1,4 @@
-module fabu
+module ClientScript
 
 open Fable.Core
 open Fable.Core.JsInterop

@@ -1,15 +1,10 @@
 var path = require("path");
 var webpack = require("webpack");
 var fableUtils = require("fable-utils");
-//var fabPath = "C:\\_c\\fable-samples\\SpaApp\\fab\\fab.fsproj";
-var fabPath = "../fab/fab.fsproj";
+var fabPath = "../ClientScript/ClientScript.fsproj";
 
 function resolve(filePath) {
   return path.join(__dirname, filePath)
-}
-
-function resolveFab(filePath) {
-    return path.join(fabPath, filePath)
 }
 
 
