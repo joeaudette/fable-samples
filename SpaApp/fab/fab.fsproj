@@ -1,18 +1,25 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+   <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
     <Compile Include="App.fs" />
   </ItemGroup>
+  <!--
   <ItemGroup>
-  
+    <PackageReference Include="dotnet-fable" Version="1.3.0-*" />
     <PackageReference Include="Fable.Core" Version="1.3.0-*" />
     <PackageReference Include="Fable.Import.Browser" Version="1.2.0-*" />
   </ItemGroup>
-  <!--
+  -->
+  <!-- 
+  the below does not work for dotnet restore or build for me packet.exe error
+  so I commented it out and tried to just use nuget package refs above
+  now it restores and builds but dotnet fable start does not work
+   -->
+  
 <Import Project="..\.paket\Paket.Restore.targets" />
--->
+
 </Project>
