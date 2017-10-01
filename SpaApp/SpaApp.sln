@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaApp", "SpaApp\SpaApp.csproj", "{4A414EFD-FBCA-4F71-97A9-84548798A1AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpaApp", "SpaApp\SpaApp.csproj", "{4A414EFD-FBCA-4F71-97A9-84548798A1AA}"
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "fab", "fab\fab.fsproj", "{096D0BC1-A7E3-4C90-9A79-7B2EF2BFEE9B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{4A414EFD-FBCA-4F71-97A9-84548798A1AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A414EFD-FBCA-4F71-97A9-84548798A1AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A414EFD-FBCA-4F71-97A9-84548798A1AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{096D0BC1-A7E3-4C90-9A79-7B2EF2BFEE9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{096D0BC1-A7E3-4C90-9A79-7B2EF2BFEE9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{096D0BC1-A7E3-4C90-9A79-7B2EF2BFEE9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{096D0BC1-A7E3-4C90-9A79-7B2EF2BFEE9B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
