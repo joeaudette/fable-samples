@@ -1,4 +1,16 @@
+## About this solution
+
+There are 2 projects SpaApp is an ASP.NET Core web app in C# and ClientScript is an F# project for writing client side code that is transpiled to javascript by Fable resulting in wwwroot/dist/bundle.js
+
+The transpilation happens automatically using webpack middleware for hot module reloading.
+The Web app uses static files middleware to serve the wwwroot/index.html file
+
+There is also an example api controller which is not currently used. Mainly this sample is to show proof of concept how to be able to write client side script in F# and use it within an ASP.NET Core project.
+
+
 ## Building and running the app
+
+This solution uses paket for F# dependencies and NuGet for C#
 
 You will need 2 terminal windows, one for running the app and one for running the Fable daemon
 

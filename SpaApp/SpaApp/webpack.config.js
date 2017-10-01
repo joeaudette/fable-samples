@@ -23,7 +23,7 @@ module.exports = {
   entry: { 'main': fabPath },
   output: {
     path: resolve('./wwwroot/dist'),
-    publicPath: "/wwwroot/dist",
+    publicPath: "/wwwroot/dist/",
     filename: "bundle.js"
   },
   resolve: {
