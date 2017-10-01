@@ -3,6 +3,7 @@ module ClientScript
 open Fable.Core
 open Fable.Core.JsInterop
 open Fable.Import
+open Fable.Import.Browser
 
 let init() =
     let canvas = Browser.document.getElementsByTagName_canvas().[0]
