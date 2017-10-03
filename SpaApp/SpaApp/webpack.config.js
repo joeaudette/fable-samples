@@ -15,14 +15,12 @@ var babelOptions = fableUtils.resolveBabelOptions({
 });
 
 var isProduction = process.argv.indexOf("-p") >= 0;
-//var isProduction = (env && env.prod);
-//var port = process.env.SUAVE_FABLE_PORT || "8085";
 console.log("Bundling for " + (isProduction ? "production" : "development") + "...");
 
 module.exports = {
   devtool: "source-map",
   entry: { 
-    'main': fPath , 'style': './wwwroot/scss/main.scss'
+    'main': fPath, 'style': './wwwroot/scss/main.scss'
   },
   output: {
     path: resolve('./wwwroot/dist'),
@@ -32,18 +30,6 @@ module.exports = {
   resolve: {
     modules: [ resolve("./node_modules/")]
   },
-  /*
-  devServer: {
-    proxy: {
-      '/api/*': {
-        target: 'http://localhost:' + port,
-        changeOrigin: true
-      }
-    },
-    hot: true,
-    inline: true
-  },
-  */
   module: {
     rules: [
       {
@@ -73,7 +59,12 @@ module.exports = {
 
     ]
   },
-  plugins : isProduction ? [] : [
+  plugins: isProduction ? [
+      new ExtractTextPlugin({ // define where to save the file
+          filename: '[name].bundle.css',
+          allChunks: true,
+      })
+      ] : [
       new webpack.HotModuleReplacementPlugin(),
       new webpack.NamedModulesPlugin(),
       new ExtractTextPlugin({ // define where to save the file
