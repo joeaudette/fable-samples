@@ -1,7 +1,8 @@
 var path = require("path");
 var webpack = require("webpack");
 var fableUtils = require("fable-utils");
-var fabPath = "../ClientScript/ClientScript.fsproj";
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var fPath = "../ClientScript/ClientScript.fsproj";
 
 function resolve(filePath) {
   return path.join(__dirname, filePath)
@@ -20,11 +21,13 @@ console.log("Bundling for " + (isProduction ? "production" : "development") + ".
 
 module.exports = {
   devtool: "source-map",
-  entry: { 'main': fabPath },
+  entry: { 
+    'main': fPath , 'style': './wwwroot/scss/main.scss'
+  },
   output: {
     path: resolve('./wwwroot/dist'),
     publicPath: "/wwwroot/dist/",
-    filename: "bundle.js"
+    filename: '[name].js'
   },
   resolve: {
     modules: [ resolve("./node_modules/")]
@@ -60,11 +63,22 @@ module.exports = {
           loader: 'babel-loader',
           options: babelOptions
         },
+      },
+      
+      { // sass / scss loader for webpack
+        test: /\.(sass|scss)$/,
+        loader: ExtractTextPlugin.extract(['css-loader', 'sass-loader'])
       }
+
+
     ]
   },
   plugins : isProduction ? [] : [
       new webpack.HotModuleReplacementPlugin(),
-      new webpack.NamedModulesPlugin()
+      new webpack.NamedModulesPlugin(),
+      new ExtractTextPlugin({ // define where to save the file
+        filename: '[name].bundle.css',
+        allChunks: true,
+      })
   ]
 };

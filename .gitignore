@@ -286,3 +286,9 @@ __pycache__/
 *.btm.cs
 *.odx.cs
 *.xsd.cs
+SpaApp/SpaApp/wwwroot/dist/main.js
+SpaApp/SpaApp/wwwroot/dist/style.bundle.css
+SpaApp/SpaApp/wwwroot/dist/main.js.map
+SpaApp/SpaApp/wwwroot/dist/style.bundle.css.map
+SpaApp/SpaApp/wwwroot/dist/style.js
+SpaApp/SpaApp/wwwroot/dist/style.js.map
